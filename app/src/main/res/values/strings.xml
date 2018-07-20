@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TonHoaSung</string>
+    
+    <string name="lable_note">Please include the invoice number on all remittances and include remittances copy with postal payments</string>
 </resources>

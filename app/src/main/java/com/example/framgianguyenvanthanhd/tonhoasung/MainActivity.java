@@ -1,4 +1,4 @@
-ntpackage com.example.framgianguyenvanthanhd.tonhoasung;
+package com.example.framgianguyenvanthanhd.tonhoasung;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
