@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">TonHoaSung</string>
-    
+
+    <string name="lable_warning">Special Instructions \nFor questions regarding this invoice, please contact salesperson \nA 1.5% finance charge is added to all past due invoices. All software is licensed in accordance with the terms and conditions of the Sofrware License and Services agreement or the referenced GSA Shedule contact</string>
+
     <string name="lable_note">Please include the invoice number on all remittances and include remittances copy with postal payments</string>
 </resources>

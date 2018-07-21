@@ -6,76 +6,76 @@
     <TextView
         android:id="@+id/tv_item_number_value"
         android:text="1"
-        android:textStyle="bold"
         style="@style/text_view_normal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tv_item_description_value"/>
+        app:layout_constraintEnd_toStartOf="@id/tv_item_description_value"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
         android:id="@+id/tv_item_description_value"
         android:text="Sợi TC30/1 /W65"
-        android:textStyle="bold"
         style="@style/text_view_normal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintHorizontal_weight="3"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_item_number_value"
-        app:layout_constraintEnd_toStartOf="@id/tv_item_quantity_shipper_value"/>
+        app:layout_constraintEnd_toStartOf="@id/tv_item_quantity_shipper_value"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
         android:id="@+id/tv_item_quantity_shipper_value"
         android:text="2025.6"
         android:textAlignment="textEnd"
-        android:textStyle="bold"
         style="@style/text_view_normal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintHorizontal_weight="2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_item_description_value"
-        app:layout_constraintEnd_toStartOf="@id/tv_item_tax_value"/>
+        app:layout_constraintEnd_toStartOf="@id/tv_item_tax_value"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
         android:id="@+id/tv_item_tax_value"
         android:text="Yes"
-        android:textStyle="bold"
         style="@style/text_view_normal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_item_quantity_shipper_value"
-        app:layout_constraintEnd_toStartOf="@id/tv_item_unit_price_value"/>
+        app:layout_constraintEnd_toStartOf="@id/tv_item_unit_price_value"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
         android:id="@+id/tv_item_unit_price_value"
         android:text="573"
         android:textAlignment="textEnd"
-        android:textStyle="bold"
         style="@style/text_view_normal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintHorizontal_weight="2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_item_tax_value"
-        app:layout_constraintEnd_toStartOf="@id/tv_item_extended_amount_value"/>
+        app:layout_constraintEnd_toStartOf="@id/tv_item_extended_amount_value"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
         android:id="@+id/tv_item_extended_amount_value"
         android:text="11665450"
         android:textAlignment="textEnd"
-        android:textStyle="bold"
         style="@style/text_view_normal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintHorizontal_weight="2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_item_unit_price_value"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>
