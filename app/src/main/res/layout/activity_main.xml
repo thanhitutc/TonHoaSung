@@ -664,14 +664,14 @@
             style="@style/line_vertical"
             app:layout_constraintTop_toBottomOf="@id/line_top_list_item"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="@id/line_bottom_list_item"/>
 
         <View
             android:id="@+id/line_right_list_item"
             style="@style/line_vertical"
             app:layout_constraintTop_toBottomOf="@id/line_top_list_item"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="@id/line_bottom_list_item"/>
         
         <ImageView
             android:id="@+id/btn_zoom"
@@ -806,6 +806,28 @@
             app:layout_constraintTop_toBottomOf="@id/line_icon_holizotal"
             app:layout_constraintStart_toEndOf="@id/tv_lable_unit_price"
             app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <View
+            android:id="@+id/line_item_num_holizotal"
+            style="@style/line_horlizotal"
+            app:layout_constraintTop_toBottomOf="@id/tv_lable_item_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_list_items"
+            android:layout_width="0dp"
+            android:layout_height="96dp"
+            app:layout_constraintTop_toBottomOf="@id/line_item_num_holizotal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/line_bottom_list_item"
+            style="@style/line_horlizotal"
+            app:layout_constraintTop_toBottomOf="@id/rc_list_items"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
     </android.support.constraint.ConstraintLayout>
 
