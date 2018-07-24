@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/tv_lable_name_company"
+        android:text="Công ty CP Hoa Sen - Chi nhánh Tây Ninh"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_logo_company"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/logo_company"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_lable_number_store"
+        android:text="Cửa hàng số "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_header_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_name_company" />
+
+    <TextView
+        android:id="@+id/tv_number_store_value"
+        android:text="001 "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_header_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tv_lable_number_store"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_name_company" />
+
+    <TextView
+        android:id="@+id/tv_lable_tax_id"
+        android:text="- MST: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_header_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tv_number_store_value"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_name_company" />
+
+    <TextView
+        android:id="@+id/tv_tax_id_number_value"
+        android:text="xxxxxx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_header_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tv_lable_tax_id"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_name_company" />
+
+    <TextView
+        android:id="@+id/tv_lable_address"
+        android:text="Địa chỉ: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_header_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_number_store" />
+
+    <TextView
+        android:id="@+id/tv_address_value"
+        android:text=" Keangnam Landmark 72, Pham Hung, Nam Tu Liem, Ha Noi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_header_title"
+        app:layout_constraintStart_toEndOf="@id/tv_lable_address"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_number_store" />
+
+    <TextView
+        android:id="@+id/tv_lable_phone"
+        android:text="Điện thoại: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_header_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_address" />
+
+    <TextView
+        android:id="@+id/tv_phone_value"
+        android:text="09869696969"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_header_title"
+        app:layout_constraintStart_toEndOf="@id/tv_lable_phone"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_address" />
+
+    <TextView
+        android:id="@+id/tv_lable_fax"
+        android:text="Fax: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_header_title"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toEndOf="@id/tv_phone_value"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_address" />
+
+    <TextView
+        android:id="@+id/tv_fax_value"
+        android:text="09869696969"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_header_title"
+        app:layout_constraintStart_toEndOf="@id/tv_lable_fax"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_address" />
+
+    <TextView
+        android:id="@+id/tv_lable_hotline"
+        android:text="Hotline: 18001515"
+        android:textColor="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_header_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_address" />
+
+    <TextView
+        android:id="@+id/tv_lable_recept"
+        android:text="Phiếu thu"
+        android:textAllCaps="true"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone_value"
+        app:layout_constraintEnd_toEndOf="@id/barrier_info_recepts"/>
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier_info_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="tv_lable_code_recepts_number,tv_lable_number_value"/>
+
+    <TextView
+        android:id="@+id/tv_code_recepts_value"
+        android:text="2736723"
+        style="@style/text_view_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_lable_recept"
+        app:layout_constraintBottom_toTopOf="@id/tv_lable_number_value"/>
+
+    <TextView
+        android:id="@+id/tv_lable_code_recepts"
+        android:text="Mã: "
+        style="@style/text_view_header_title"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_lable_recept"
+        app:layout_constraintEnd_toStartOf="@id/tv_code_recepts_value"
+        app:layout_constraintBottom_toTopOf="@id/tv_lable_number_value"/>
+
+    <TextView
+        android:id="@+id/tv_number_value"
+        android:text="00001"
+        style="@style/text_view_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_code_recepts_value"
+        app:layout_constraintBottom_toBottomOf="@id/tv_lable_recept"/>
+
+    <TextView
+        android:id="@+id/tv_lable_number_value"
+        android:text="Số: "
+        style="@style/text_view_header_title"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_code_recepts_value"
+        app:layout_constraintEnd_toStartOf="@id/tv_code_recepts_value"
+        app:layout_constraintBottom_toBottomOf="@id/tv_lable_recept"/>
+
+    <TextView
+        android:id="@+id/tv_lable_date"
+        android:text="Ngày: "
+        app:layout_constraintHorizontal_chainStyle="packed"
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_recept"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_date_number"/>
+
+    <TextView
+        android:id="@+id/tv_date_number"
+        android:text="19/07/2018"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_recept"
+        app:layout_constraintStart_toEndOf="@id/tv_lable_date"
+        app:layout_constraintEnd_toEndOf="@id/barrier_info_recepts"/>
+
+    <TextView
+        android:id="@+id/tv_lable_name_client"
+        android:text="Khách hàng: "
+        android:textStyle="bold"
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_date"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_lable_address_client"
+        android:text="Địa chỉ: "
+        android:textStyle="bold"
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_name_client"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_lable_name_payer"
+        android:text="Người nộp tiền: "
+        android:textStyle="bold"
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_address_client"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_lable_reason"
+        android:text="Lý do: "
+        android:textStyle="bold"
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_name_payer"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_lable_money"
+        android:text="Số tiền: "
+        android:textStyle="bold"
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_reason"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_lable_written_in_word"
+        android:text="Viết bằng chữ: "
+        android:textStyle="bold"
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_money"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_lable_voucher_extend"
+        android:text="Chứng từ kèm theo: "
+        android:textStyle="bold"
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_written_in_word"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier_info_detail_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="tv_lable_voucher_extend"/>
+
+    <TextView
+        android:id="@+id/tv_name_client_value"
+        android:text="Khách hàng: "
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_date"
+        app:layout_constraintStart_toEndOf="@id/barrier_info_detail_recepts"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_address_client_value"
+        android:text="Địa chỉ: "
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_name_client"
+        app:layout_constraintStart_toEndOf="@id/barrier_info_detail_recepts"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_name_payer_value"
+        android:text="Người nộp tiền: "
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_address_client"
+        app:layout_constraintStart_toEndOf="@id/barrier_info_detail_recepts"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_reason_value"
+        android:text="Thu tiền bán hàng"
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_name_payer"
+        app:layout_constraintStart_toEndOf="@id/barrier_info_detail_recepts"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_money_value"
+        android:text="Số tiền: "
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_reason"
+        app:layout_constraintStart_toEndOf="@id/barrier_info_detail_recepts"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_written_in_word_value"
+        android:text="Viết bằng chữ: "
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_money"
+        app:layout_constraintStart_toEndOf="@id/barrier_info_detail_recepts"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_voucher_extend_value"
+        android:text="Chứng từ kèm theo: "
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_written_in_word"
+        app:layout_constraintStart_toEndOf="@id/barrier_info_detail_recepts"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_lable_date_footer"
+        android:text="Ngày: "
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_voucher_extend"
+        app:layout_constraintEnd_toStartOf="@id/tv_date_number_footer"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_date_number_footer"
+        android:text="19/07/2018"
+        style="@style/text_view_normal_recepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_voucher_extend"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_lable_director"
+        android:text="@string/lable_director"
+        style="@style/text_view_normal_recepts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_date_number_footer"
+        app:layout_constraintEnd_toStartOf="@id/tv_lable_accountant"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_lable_accountant"
+        android:text="@string/lable_accountant"
+        style="@style/text_view_normal_recepts"
+        android:textAlignment="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/tv_lable_director"
+        app:layout_constraintTop_toBottomOf="@id/tv_date_number_footer"
+        app:layout_constraintEnd_toStartOf="@id/tv_lable_receiver_money"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_lable_receiver_money"
+        android:text="@string/lable_receiver_money"
+        android:textAlignment="center"
+        style="@style/text_view_normal_recepts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/tv_lable_accountant"
+        app:layout_constraintTop_toBottomOf="@id/tv_date_number_footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_lable_creater"
+        android:text="@string/lable_creater"
+        style="@style/text_view_normal_recepts"
+        android:textAlignment="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_director"
+        app:layout_constraintEnd_toEndOf="@id/tv_lable_director"
+        android:layout_marginTop="96dp"/>
+
+    <TextView
+        android:id="@+id/tv_lable_treasurer"
+        android:text="@string/lable_treasurer"
+        android:textAlignment="center"
+        style="@style/text_view_normal_recepts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="@id/tv_lable_receiver_money"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_accountant"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="96dp"/>
+
+    <Button
+        android:id="@+id/btn_print_recepts"
+        android:text="Print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lable_creater"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

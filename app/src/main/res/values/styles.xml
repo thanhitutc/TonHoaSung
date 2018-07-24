@@ -20,6 +20,16 @@
         <item name="android:padding">4dp</item>
     </style>
 
+    <style name="text_view_header_title">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text_view_normal_recepts">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
     <style name="line_horlizotal">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">1dp</item>
